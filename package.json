@@ -1,0 +1,18 @@
+{
+    "name": "eyas-automation-framework",
+    "version": "1.0.0",
+    "description": "Playwright automation framework for EYAS Remote Sensing platform",
+    "scripts": {
+          "test": "playwright test",
+          "test:headed": "playwright test --headed",
+          "test:ui": "playwright test --ui",
+          "test:report": "playwright show-report",
+          "test:workspace": "playwright test tests/workspace.spec.js",
+          "test:drone": "playwright test tests/drone-query-builder.spec.js",
+          "test:satellite": "playwright test tests/satellite-query-builder.spec.js",
+          "test:tickets": "playwright test tests/tickets.spec.js"
+    },
+    "devDependencies": {
+          "@playwright/test": "^1.44.0"
+    }
+}
